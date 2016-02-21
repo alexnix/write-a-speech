@@ -1,0 +1,25 @@
+{
+  "name": "writeaspeeach",
+  "version": "0.0.0",
+  "authors": [
+    "Alexandru Niculae <alex2august@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "~2.6.0",
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0",
+    "jquery": "~2.2.0"
+  }
+}

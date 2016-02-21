@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Write a Speeach</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="style.less">
+	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+<body ng-app="app">
+
+	<div class="col-sm-3 side">
+		<div class="tts">
+			<h3><i class="fa fa-clock-o"></i> Speack Time</h3>
+			<span>
+				{{((text.replace('\n', ' ').split(' ').length / 100) | number:1) || "0.0" }} minutes
+			 </span>
+		</div>
+		<iframe width="100%" height="315" src="https://www.youtube.com/embed/eIho2S0ZahI" frameborder="0" allowfullscreen></iframe>
+		<p>While designing your speack you might want to make sure you to keep in mind the following tips:</p>
+		<ul>
+			<li><label><input type="checkbox" /> Have a clar start stating what you want to communicate</label></li>
+			<li><label><input type="checkbox" /> Make sure you REPEAT your main points several times during the speeach</label></li>
+			<li><label><input type="checkbox" /> Ask audience questions or ask them to take some action on order to keep them listening</label></li>
+			<li><label><input type="checkbox" /> Try to make a few jockes</label></li>
+			<li><label><input type="checkbox" /> Tell a short story to prove your points</label></li>
+		</ul>
+	</div>
+	<div class="col-sm-7 main">
+		<textarea msd-elastic ng-model="text" placeholder="Type your speeach here and see how long it will take you to give it..."></textarea>
+	</div>				
+	<div class="col-sm-2 right">
+		<!-- <div class="adds"></div>
+		<div class="adds"></div>
+		<div class="adds"></div> -->
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-elastic/elastic.js"></script>
+	<script type="text/javascript" src="bower_components/less/dist/less.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
